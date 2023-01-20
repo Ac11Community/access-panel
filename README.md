@@ -16,3 +16,7 @@ You need to have A11yWatch running locally for development.
 You can use a .env file and set the API instance with the `API` variable.
 
 1. `API`
+
+## Todo
+
+Add zones (split astro into two folders one static and one for API routes ).
