@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { App } from "../components/App";
 import { setAPIURL } from "@a11ywatch/react-a11ywatch-js";
 
-setAPIURL(import.meta.env.NEXT_PUBLIC_A11YWATCH_API || import.meta.env.API || "http://localhost:3280");
+setAPIURL(import.meta.env.NEXT_PUBLIC_A11YWATCH_API || import.meta.env.PUBLIC_API || "http://localhost:3280");
 ---
 
 <Layout title="Welcome to Access Panel.">
