@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "install": "cd ./static && yarn & cd ./server && yarn",
+        "deps:install": "cd ./static && yarn & cd ./server && yarn",
         "dev": "cd ./static && yarn dev & cd ./server && yarn dev"
     }
 }

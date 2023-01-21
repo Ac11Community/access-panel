@@ -4,7 +4,7 @@ The accessibility panel
 
 ## Getting Started
 
-1. `yarn install`
+1. `cd ./static && yarn & cd ./server && yarn` or `yarn deps:install`
 1. `yarn dev`
 1. `open http://localhost:3000/`
 
