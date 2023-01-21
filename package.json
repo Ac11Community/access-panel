@@ -3,5 +3,8 @@
     "scripts": {
         "deps:install": "cd ./static && yarn & cd ./server && yarn",
         "dev": "cd ./static && yarn dev & cd ./server && yarn dev"
+    },
+    "dependencies": {
+        "@vercel/node": "^2.8.15"
     }
 }
