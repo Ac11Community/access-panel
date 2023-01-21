@@ -9,7 +9,7 @@ const stripeSecret = process.env.STRIPE_WH_SECRET || "";
 const stripePlan = process.env.STRIPE_PLAN_ID || "";
 
 export default async (request: VercelRequest, _response: VercelResponse) => {
-    const stripeEvent = request?.body 
+  const stripeEvent = request?.body 
   let event: Stripe.Event;
 
   try {
