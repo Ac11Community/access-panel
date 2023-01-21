@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
-import vercel from "@astrojs/vercel/serverless";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
@@ -9,8 +8,7 @@ const site = process.env.PUBLIC_VERCEL_URL ? `https://${process.env.PUBLIC_VERCE
 
 export default defineConfig({
     site: process.env.NODE_ENV === "development" ? "http://localhost:3000": site,
-    adapter: vercel(),
-    output: "server",
+    output: "static",
     integrations: [
         react(),
         sitemap(),

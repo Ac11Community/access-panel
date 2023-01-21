@@ -1,22 +1,19 @@
 # access-panel
 
-Web access panel for liftoff.
+The accessibility panel
 
 ## Getting Started
 
-You need to have A11yWatch running locally for development.
+1. `yarn install`
+1. `yarn dev`
+1. `open http://localhost:3000/`
 
-1. start [a11ywatch](https://github.com/a11ywatch/a11ywatch) locally.
-2. `yarn`
-3. `yarn dev`
-4. open `http://localhost:3000/`
+## API Routes
 
-## ENV configs
+The API routes live in the [server](./server/) folder.
 
-You can use a .env file and set the API instance with the `API` variable.
+Example testing route: 
 
-1. `API`
-
-## Todo
-
-Add zones (split astro into two folders one static and one for API routes ).
+```sh
+curl --location --request GET 'http://localhost:3001/api/request-path.json'
+```
