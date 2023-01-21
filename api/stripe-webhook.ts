@@ -1,20 +1,22 @@
-import type { APIRoute } from 'astro';
-
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 import Stripe from "stripe";
 
-const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
     apiVersion: "2022-11-15"
 });
 
-export const post: APIRoute = async ({ request }) => {
-  const stripeEvent = await request?.json();
+const stripeSecret = process.env.STRIPE_WH_SECRET || "";
+const stripePlan = process.env.STRIPE_PLAN_ID || "";
+
+export default async (request: VercelRequest, _response: VercelResponse) => {
+    const stripeEvent = request?.body 
   let event: Stripe.Event;
 
   try {
     event = await stripe.webhooks.constructEventAsync(
       stripeEvent && Buffer.from(stripeEvent),
-      request.headers.get('stripe-signature') || "",
-      import.meta.env.STRIPE_WH_SECRET
+      request && request.headers && request.headers['stripe-signature'] || "",
+      stripeSecret
     );
   } catch (err: unknown) {
     const errorMessage = err instanceof Error ? err.message : "Invalid stripe signature";
@@ -50,7 +52,7 @@ export const post: APIRoute = async ({ request }) => {
       const stripeSubscription = await stripe.subscriptions.create(
         {
           customer: stripeCustomer.id,
-          items: [{ plan: import.meta.env.STRIPE_PLAN_ID }],
+          items: [{ plan: stripePlan }],
           trial_period_days: 7
         }
       );
