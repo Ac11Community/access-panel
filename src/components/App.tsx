@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { A11yWatchProvider, setAPIURL } from "@a11ywatch/react-a11ywatch-js";
 import { Program } from './Program';
 

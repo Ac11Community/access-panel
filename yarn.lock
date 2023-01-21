@@ -2,12 +2,15 @@
 # yarn lockfile v1
 
 
-"@a11ywatch/react-a11ywatch-js@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@a11ywatch/react-a11ywatch-js/-/react-a11ywatch-js-0.1.0.tgz#9241e5b9ad0ca9b2c5837a75973a379169aba5b4"
-  integrity sha512-vkRu+JnIfG+NbHk6wUTdKUJwSpbTpPXSQ2t0FAFfgW2nshpClwyOnpFj1SjSbjod4/agUHydkIvXpuTo5CSONQ==
+"@a11ywatch/react-a11ywatch-js@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@a11ywatch/react-a11ywatch-js/-/react-a11ywatch-js-0.1.7.tgz#cb98ccf39c16fc4af4a4c499a31a362293d83684"
+  integrity sha512-TP93+dSUHRC/uf6zZQ5yaa2pPH6icuOHhPelpg/IC3x84t8RQVcGbLz9qPC8vCdP3QWaSahe74Dxczd00tZkDA==
   dependencies:
+    "@headlessui/react" "^1.7.7"
     buffer "^6.0.3"
+    clsx "^1.2.1"
+    react-icons "^4.7.1"
 
 "@altano/tiny-async-pool@^1.0.2":
   version "1.0.2"
@@ -421,6 +424,13 @@
   version "0.15.18"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.18.tgz#128b76ecb9be48b60cf5cfc1c63a4f00691a3239"
   integrity sha512-L4jVKS82XVhw2nvzLg/19ClLWg0y27ulRwuP7lcyL6AbUWB5aPglXY3M21mauDQMDfRLs8cQmeT03r/+X3cZYQ==
+
+"@headlessui/react@^1.7.7":
+  version "1.7.7"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.7.tgz#d6f8708d8943ae8ebb1a6929108234e4515ac7e8"
+  integrity sha512-BqDOd/tB9u2tA0T3Z0fn18ktw+KbVwMnkxxsGPIH2hzssrQhKB5n/6StZOyvLYP/FsYtvuXfi9I0YowKPv2c1w==
+  dependencies:
+    client-only "^0.0.1"
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -1220,10 +1230,20 @@ cli-spinners@^2.6.1:
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.7.0.tgz#f815fd30b5f9eaac02db604c7a231ed7cb2f797a"
   integrity sha512-qu3pN8Y3qHNgE2AFweciB1IfMnmZ/fsNTEE+NOFjmGB2F/7rLhnhzppvpCnN4FovtP26k8lHyy9ptEbNwWFLzw==
 
+client-only@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
+  integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
+
 clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
+
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 code-block-writer@^10.1.1:
   version "10.1.1"
@@ -3529,6 +3549,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-icons@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"
+  integrity sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
 
 react@^18.2.0:
   version "18.2.0"

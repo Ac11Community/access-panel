@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "access-panel",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@a11ywatch/react-a11ywatch-js": "^0.1.0",
+    "@a11ywatch/react-a11ywatch-js": "^0.1.7",
     "@astrojs/image": "^0.12.1",
     "@astrojs/react": "^1.2.2",
     "@astrojs/sitemap": "^1.0.0",

@@ -2,7 +2,6 @@
 import "@a11ywatch/react-a11ywatch-js/css/tailwind.css";
 import Layout from '../layouts/Layout.astro';
 import { App } from "../components/App";
-import { setAPIURL } from "@a11ywatch/react-a11ywatch-js";
 
 // SSG pass API route to client
 const apiUrl = import.meta.env.NEXT_PUBLIC_A11YWATCH_API || import.meta.env.PUBLIC_API || "http://localhost:3280";
@@ -19,7 +18,7 @@ const apiUrl = import.meta.env.NEXT_PUBLIC_A11YWATCH_API || import.meta.env.PUBL
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 100ch;
 	}
 	h1 {
 		font-size: 2.8rem;
