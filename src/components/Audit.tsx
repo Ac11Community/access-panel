@@ -11,8 +11,15 @@ export const Audit = () => {
 
   return account.authed ? (
     <AuditProvider multi>
-        <FormDialog buttonTitle="Run Audit" subTitle="Add a url to analyze below." submitTitle="Submit"/>
-        <AuditList />
+        <FormDialog 
+          buttonTitle="Run Audit" 
+          subTitle="Add a url to analyze below." 
+          submitTitle="Submit" 
+          viewConfigs={{ disabled: {lighthouse: true }}}
+        />
+        <div className={"bg-white dark:bg-black"}>
+          <AuditList />
+        </div>
     </AuditProvider>
   ) : (
     <SignOnForm />

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@a11ywatch/react-a11ywatch-js@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@a11ywatch/react-a11ywatch-js/-/react-a11ywatch-js-0.1.7.tgz#cb98ccf39c16fc4af4a4c499a31a362293d83684"
-  integrity sha512-TP93+dSUHRC/uf6zZQ5yaa2pPH6icuOHhPelpg/IC3x84t8RQVcGbLz9qPC8vCdP3QWaSahe74Dxczd00tZkDA==
+"@a11ywatch/react-a11ywatch-js@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@a11ywatch/react-a11ywatch-js/-/react-a11ywatch-js-0.1.13.tgz#d3feb24957c76f403abe3106164d0d9ba0e42ec3"
+  integrity sha512-IwzSi0ZtvCBKYkYK5PDN/Hg7Vpne2ns16gLzOK27FXFAinHpNyXq5Y3VNHTGElDdjw1U5vU2udK3R1j9BAZf/g==
   dependencies:
     "@headlessui/react" "^1.7.7"
     buffer "^6.0.3"

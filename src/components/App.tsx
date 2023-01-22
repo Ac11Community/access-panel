@@ -10,8 +10,10 @@ export const App: FC<Application>  = ({ apiUrl }) => {
   setAPIURL(apiUrl || "http://localhost:3280");
 
   return (
-    <A11yWatchProvider persist>
-      <Program />
-    </A11yWatchProvider>
+    <div className='py-4'>
+      <A11yWatchProvider persist>
+        <Program />
+      </A11yWatchProvider>
+    </div>
   );
 }
